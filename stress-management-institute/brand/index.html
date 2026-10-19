@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit de marca — Stress Mind Institute</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--mostaza:#C9973C;--bordo:#7A2048;--petroleo:#163C46;--crema:#FBF6EC;--ink:#2B2320;--muted:#6b6157;--serif:'Fraunces',Georgia,serif;--sans:'Work Sans',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--crema);color:var(--ink);font-family:var(--sans);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);margin:0;line-height:1.2;color:var(--petroleo)}
+p{margin:0}
+a{color:var(--bordo)}
+svg{display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.top{padding:40px 0 8px}
+.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:600;color:var(--bordo);text-transform:uppercase;margin-bottom:8px}
+header.top h1{font-size:34px;font-weight:700}
+header.top p{color:var(--muted);margin-top:10px;max-width:640px}
+.links{margin-top:14px;font-size:14px;display:flex;gap:16px;flex-wrap:wrap}
+section{padding:40px 0;border-bottom:1px solid rgba(22,60,70,.1)}
+section:last-of-type{border-bottom:0}
+section > .wrap > h2{font-size:24px;margin-bottom:6px}
+.note{font-size:14px;color:var(--muted);margin-bottom:22px}
+
+/* Logo */
+.lockups{display:grid;gap:20px}
+.lockup{border-radius:20px;padding:40px 20px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.lockup .icon{width:148px;height:148px}
+.lockup .word{font-family:var(--serif);font-weight:700;letter-spacing:.2em;font-size:18px;text-transform:uppercase;margin-right:-.2em}
+.lockup .tag{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--mostaza);font-size:15px}
+.lockup .cap{font-size:12px;letter-spacing:.08em;opacity:.65;margin-top:8px}
+.lk-dark{background:var(--petroleo);color:var(--crema)}
+.lk-dark .icon{color:var(--mostaza)}
+.lk-light{background:var(--crema);border:1px solid rgba(22,60,70,.18);color:var(--petroleo)}
+.lk-light .icon{color:var(--petroleo)}
+.icons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.icons > div{border-radius:16px;padding:22px;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;letter-spacing:.06em}
+.icons svg{width:72px;height:72px}
+
+/* Paleta */
+.palette{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.sw{background:#fff;border-radius:16px;overflow:hidden;border:1px solid rgba(22,60,70,.1)}
+.sw .chip{height:96px}
+.sw .meta{padding:12px 14px}
+.sw .name{font-weight:600;color:var(--petroleo);font-size:14px}
+.sw .hex{font-family:ui-monospace,Consolas,monospace;font-size:13px;color:var(--muted)}
+
+/* Tipografía */
+.type{display:grid;gap:18px}
+.spec{background:#fff;border-radius:16px;padding:26px 22px;border:1px solid rgba(22,60,70,.1)}
+.spec .big{font-size:64px;line-height:1;color:var(--petroleo)}
+.spec .fam{font-weight:600;color:var(--petroleo);margin-top:12px}
+.spec .use{font-size:13px;color:var(--muted)}
+.spec .sample{margin-top:14px;color:var(--ink);overflow-wrap:anywhere}
+
+/* Tarjetas 89 x 51 mm */
+.cards-lang{margin-top:8px}
+.cards-lang h3{font-size:18px;margin:26px 0 14px}
+.cards{display:grid;gap:18px}
+.face-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.bcard{aspect-ratio:89/51;width:100%;border-radius:10px;container-type:inline-size;box-shadow:0 18px 40px rgba(22,60,70,.16),0 2px 6px rgba(22,60,70,.08);overflow:hidden;position:relative}
+.bcard-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center}
+.front{background:var(--petroleo)}
+.front .bcard-in{justify-content:center;gap:2.2cqw}
+.front .icon{width:25cqw;height:25cqw;color:var(--mostaza)}
+.front .word{font-family:var(--serif);font-weight:700;color:var(--crema);font-size:4.6cqw;letter-spacing:.2em;margin-right:-.2em;margin-top:1.2cqw;white-space:nowrap}
+.front .tag{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--mostaza);font-size:3.2cqw}
+.back{background:var(--crema)}
+.back .bcard-in{padding:4.2cqw 7cqw 3.8cqw;justify-content:flex-start}
+.back .icon{width:8cqw;height:8cqw;color:var(--mostaza);flex-shrink:0}
+.back .org{font-family:var(--sans);font-weight:600;color:var(--bordo);font-size:2.3cqw;letter-spacing:.14em;margin-top:1.4cqw}
+.back .name{font-family:var(--serif);font-weight:700;color:var(--petroleo);font-size:5.2cqw;line-height:1.1;margin-top:2cqw}
+.back .name .ph{background:rgba(201,151,60,.2);border-radius:.6cqw;padding:0 .6cqw}
+.back .role{font-weight:600;color:var(--bordo);font-size:2.7cqw;margin-top:1.4cqw}
+.back .tagline{color:#857a6e;font-size:2.4cqw;margin-top:.8cqw}
+.back .quote{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--petroleo);font-size:2.7cqw;line-height:1.4;margin:1.8cqw 0 2.6cqw;max-width:78cqw}
+.back .rule{width:100%;height:.35cqw;min-height:1px;background:var(--mostaza);border-radius:1cqw;margin-top:auto}
+.back .contact{color:var(--petroleo);font-size:2.2cqw;letter-spacing:.04em;margin-top:2cqw;white-space:nowrap}
+.back .contact span{margin:0 1cqw;color:var(--mostaza)}
+
+footer{padding:30px 0 50px;font-size:13px;color:var(--muted)}
+
+@media (min-width:720px){
+  .wrap{padding:0 32px}
+  header.top{padding-top:64px}
+  header.top h1{font-size:44px}
+  .lockups{grid-template-columns:1fr 1fr}
+  .icons{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .palette{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .type{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:1fr 1fr;gap:28px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="ray" d="M150,86 C139,66 116,59 98,69 C83,78 79,97 94,106 C107,114 121,106 117,93 C115,86 107,84 102,89" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="core" cx="150" cy="122" r="14"/>
+    <symbol id="smi-logo" viewBox="0 0 300 300">
+      <g stroke="currentColor">
+        <circle cx="150" cy="150" r="144" fill="none" stroke-width="3.5"/>
+        <circle cx="150" cy="150" r="132" fill="none" stroke-width="1.4"/>
+        <g fill="none" stroke-width="7">
+          <use href="#ray" transform="rotate(0 150 150)"/>
+          <use href="#ray" transform="rotate(45 150 150)"/>
+          <use href="#ray" transform="rotate(90 150 150)"/>
+          <use href="#ray" transform="rotate(135 150 150)"/>
+          <use href="#ray" transform="rotate(180 150 150)"/>
+          <use href="#ray" transform="rotate(225 150 150)"/>
+          <use href="#ray" transform="rotate(270 150 150)"/>
+          <use href="#ray" transform="rotate(315 150 150)"/>
+        </g>
+        <g fill="none" stroke-width="3">
+          <circle cx="150" cy="150" r="14"/>
+          <use href="#core" transform="rotate(0 150 150)"/>
+          <use href="#core" transform="rotate(45 150 150)"/>
+          <use href="#core" transform="rotate(90 150 150)"/>
+          <use href="#core" transform="rotate(135 150 150)"/>
+          <use href="#core" transform="rotate(180 150 150)"/>
+          <use href="#core" transform="rotate(225 150 150)"/>
+          <use href="#core" transform="rotate(270 150 150)"/>
+          <use href="#core" transform="rotate(315 150 150)"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">Kit de marca</div>
+    <h1>Stress Mind Institute</h1>
+    <p>Logo, paleta, tipografía y tarjetas de presentación aprobadas. Esta página es una referencia visual para revisión; los archivos finales de impresión se generan aparte.</p>
+    <div class="links"><a href="../es/">Ver sitio en español</a><a href="../en/">View English site</a></div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Logo</h2>
+      <p class="note">Ícono sol/mándala: núcleo de 9 círculos, 8 olas que giran hacia la izquierda y aro de doble línea. Wordmark en Fraunces Bold con espaciado 0,2em; tagline en Fraunces Italic mostaza.</p>
+      <div class="lockups">
+        <div class="lockup lk-dark">
+          <svg class="icon" viewBox="0 0 300 300" role="img" aria-label="Logo Stress Mind Institute, mostaza sobre petróleo"><use href="#smi-logo"/></svg>
+          <div class="word">Stress Mind Institute</div>
+          <div class="tag">Stress Management · Mindfulness</div>
+          <div class="cap">PRINCIPAL — MOSTAZA SOBRE PETRÓLEO</div>
+        </div>
+        <div class="lockup lk-light">
+          <svg class="icon" viewBox="0 0 300 300" role="img" aria-label="Logo Stress Mind Institute, petróleo sobre crema"><use href="#smi-logo"/></svg>
+          <div class="word">Stress Mind Institute</div>
+          <div class="tag">Stress Management · Mindfulness</div>
+          <div class="cap">FONDOS CLAROS — PETRÓLEO SOBRE CREMA</div>
+        </div>
+      </div>
+      <div class="icons">
+        <div style="background:var(--petroleo);color:rgba(251,246,236,.7)"><svg viewBox="0 0 300 300" style="color:var(--mostaza)" aria-hidden="true"><use href="#smi-logo"/></svg>Ícono · mostaza</div>
+        <div style="background:#fff;border:1px solid rgba(22,60,70,.12);color:var(--muted)"><svg viewBox="0 0 300 300" style="color:var(--petroleo)" aria-hidden="true"><use href="#smi-logo"/></svg>Ícono · petróleo</div>
+        <div style="background:var(--bordo);color:rgba(251,246,236,.75)"><svg viewBox="0 0 300 300" style="color:var(--mostaza)" aria-hidden="true"><use href="#smi-logo"/></svg>Sobre bordó</div>
+        <div style="background:var(--crema);border:1px solid rgba(22,60,70,.12);color:var(--muted)"><svg viewBox="0 0 300 300" style="color:var(--mostaza)" aria-hidden="true"><use href="#smi-logo"/></svg>Mostaza sobre crema</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Paleta</h2>
+      <p class="note">Cuatro colores de marca.</p>
+      <div class="palette">
+        <div class="sw"><div class="chip" style="background:#C9973C"></div><div class="meta"><div class="name">Dorado mostaza</div><div class="hex">#C9973C</div></div></div>
+        <div class="sw"><div class="chip" style="background:#7A2048"></div><div class="meta"><div class="name">Bordó</div><div class="hex">#7A2048</div></div></div>
+        <div class="sw"><div class="chip" style="background:#163C46"></div><div class="meta"><div class="name">Azul petróleo</div><div class="hex">#163C46</div></div></div>
+        <div class="sw"><div class="chip" style="background:#FBF6EC;border-bottom:1px solid rgba(22,60,70,.1)"></div><div class="meta"><div class="name">Crema</div><div class="hex">#FBF6EC</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Tipografía</h2>
+      <p class="note">Ambas disponibles en Google Fonts.</p>
+      <div class="type">
+        <div class="spec">
+          <div class="big" style="font-family:var(--serif);font-weight:700">Aa</div>
+          <div class="fam">Fraunces</div>
+          <div class="use">Serif · títulos, wordmark y citas · 500, 600, 700, Italic 500</div>
+          <div class="sample" style="font-family:var(--serif);font-size:22px;font-weight:600">Educación para el manejo del estrés</div>
+          <div class="sample" style="font-family:var(--serif);font-style:italic;font-weight:500;color:var(--mostaza)">Stress Management · Mindfulness</div>
+        </div>
+        <div class="spec">
+          <div class="big" style="font-family:var(--sans);font-weight:600">Aa</div>
+          <div class="fam">Work Sans</div>
+          <div class="use">Sans · texto, navegación y botones · 400, 500, 600, 700</div>
+          <div class="sample" style="font-family:var(--sans)">Sesiones educativas y de práctica para el manejo del estrés; estrés y neurociencia aplicados a la vida diaria.</div>
+          <div class="sample" style="font-family:var(--sans);font-size:12px;letter-spacing:.18em;font-weight:600;color:var(--bordo)">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Tarjetas de presentación</h2>
+      <p class="note">Mockup a proporción real 89 × 51 mm. Nombre y datos de contacto pendientes de confirmación.</p>
+
+      <div class="cards-lang">
+        <h3>Español</h3>
+        <div class="cards">
+          <div>
+            <div class="face-label">Frente</div>
+            <div class="bcard front"><div class="bcard-in">
+              <svg class="icon" viewBox="0 0 300 300" aria-hidden="true"><use href="#smi-logo"/></svg>
+              <div class="word">STRESS MIND INSTITUTE</div>
+              <div class="tag">Stress Management · Mindfulness</div>
+            </div></div>
+          </div>
+          <div>
+            <div class="face-label">Dorso</div>
+            <div class="bcard back"><div class="bcard-in">
+              <svg class="icon" viewBox="0 0 300 300" aria-hidden="true"><use href="#smi-logo"/></svg>
+              <div class="org">STRESS MIND INSTITUTE</div>
+              <div class="name">Amy Istueta <span class="ph">[APELLIDO]</span></div>
+              <div class="role">Consultora Holística en Estrés y Desarrollo Personal</div>
+              <div class="tagline">Mindfulness · Balance · Claridad · Propósito</div>
+              <div class="quote">Ayudo a las personas a reducir el estrés, fortalecer su bienestar integral y potenciar su desarrollo personal.</div>
+              <div class="rule"></div>
+              <div class="contact">[EMAIL]<span>·</span>[TELÉFONO]<span>·</span>[@INSTAGRAM]<span>·</span>[WEB]</div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-lang">
+        <h3>English</h3>
+        <div class="cards">
+          <div>
+            <div class="face-label">Front</div>
+            <div class="bcard front"><div class="bcard-in">
+              <svg class="icon" viewBox="0 0 300 300" aria-hidden="true"><use href="#smi-logo"/></svg>
+              <div class="word">STRESS MIND INSTITUTE</div>
+              <div class="tag">Stress Management · Mindfulness</div>
+            </div></div>
+          </div>
+          <div>
+            <div class="face-label">Back</div>
+            <div class="bcard back" lang="en"><div class="bcard-in">
+              <svg class="icon" viewBox="0 0 300 300" aria-hidden="true"><use href="#smi-logo"/></svg>
+              <div class="org">STRESS MIND INSTITUTE</div>
+              <div class="name">Amy Istueta <span class="ph">[LAST NAME]</span></div>
+              <div class="role">Holistic Stress Management Consultant</div>
+              <div class="tagline">Mindfulness · Balance · Clarity · Purpose</div>
+              <div class="quote">Balance Within. Strength Beyond.</div>
+              <div class="rule"></div>
+              <div class="contact">[EMAIL]<span>·</span>[PHONE]<span>·</span>[@INSTAGRAM]<span>·</span>[WEBSITE]</div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Stress Mind Institute · Kit de marca v1 — octubre 2026</div></footer>
+</body>
+</html>
