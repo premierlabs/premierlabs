@@ -96,8 +96,6 @@ img,svg{display:block;max-width:100%}
 .about-role{font-size:15px;color:var(--bordo);font-weight:600;margin-bottom:22px}
 .about p.body{font-size:16px;line-height:1.8;color:#4a4137;margin-bottom:16px}
 .about .quote{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--petroleo);border-left:3px solid var(--mostaza);padding-left:16px;margin:24px 0 30px}
-.about .quote--draft{opacity:.85}
-.about .draft-note{font-family:var(--sans);font-style:normal;font-size:12px;color:var(--bordo);background:rgba(201,151,60,.18);border-radius:4px;padding:1px 6px;white-space:nowrap}
 .about .creds{border-top:1px solid rgba(22,60,70,.12);padding-top:18px;margin:0 0 30px}
 .about .creds .eyebrow{margin-bottom:8px}
 .about .creds p{font-size:13.5px;line-height:1.7;color:#6b6157;margin:0}
